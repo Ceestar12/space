@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="technology.css">
+</head>
+<body>
+    <div class="home">
+        <div class="nav-container">
+            <div>
+                <img src="shared/logo.svg" alt="">
+            </div>
+            <div class="btn">
+                <ul >
+                    <li >
+                        <a href="/index.html" class="list-style-none"><span>00</span>HOME</a>
+                    </li>
+                    <li>
+                        <a href="/destination.html"><span>01</span>DESTINATION</a>
+                    </li>
+                    <li>
+                        <a href="/crew.html"><span>02</span>CREW</a>
+                    </li>
+                    <li>
+                        <a href="/technology.html"><span>03</span>TECHNOLOGY</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+     <section class="one">
+        <h2><span>03</span>SPACE LAUNCH</h2>
+     </section>
+     <section class="flex">
+        <div>
+            <button class="circle" onclick="slideShow1()">1</button>
+            <button class="circle" onclick="slideShow2()">2</button>
+            <button class="circle" onclick="slideShow3()">3</button>
+        </div>
+        
+        <div id="text1">
+            <p>THE TERMINOLOGY</p>
+            <h2>LAUNCH VEHICLE</h2>
+            <p class="secondp">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space . usually to Earth orbit or beyond. Our WEB-X carrier rocket is hte most powerful in operation  standing 150 meters tall. it's quite an awe-inspiring sight on the launch pad!</p>
+        </div>
+        <div id="text2">
+            <p>THE TERMINOLOGY</p>
+            <h2>SPACE CAPSULE</h2>
+            <p class="secondp">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. it includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+        </div>
+        <div id="text3">
+            <p>THE TERMINOLOGY</p>
+            <h2>SPACEPORT</h2>
+            <p class="secondp">A spaceport or cosmodrone is a site for launching for receiving spacecraft, by analogy to the seaport for ships or airport for aircraft.Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth's rotation for launch </p>
+        </div>
+        <div>
+            <img src="technology/image-launch-vehicle-landscape.jpg" alt=""  id="firstImage">
+            <img src="technology/image-space-capsule-landscape.jpg" alt=""  id="secondImage">
+            <img src="technology/image-spaceport-landscape.jpg" alt=""  id="thirdImage">
+        </div>
+     </section>
+        
+
+        </div>
+
+      <script>
+        function slideShow1(){
+            document.getElementById('firstImage').style.display = 'block'
+            document.getElementById('secondImage').style.display = 'none'
+            document.getElementById('thirdImage').style.display = 'none'
+
+            document.getElementById('text1').style.display = 'block'
+            document.getElementById('text2').style.display = 'none'
+            document.getElementById('text3').style.display = 'none'
+        }
+        function slideShow2(){
+            document.getElementById('secondImage').style.display = 'block'
+            document.getElementById('firstImage').style.display = 'none'
+            document.getElementById('thirdImage').style.display = 'none'
+
+            document.getElementById('text1').style.display = 'none'
+            document.getElementById('text2').style.display = 'block'
+            document.getElementById('text3').style.display = 'none'
+        }
+        function slideShow3(){
+            document.getElementById('secondImage').style.display = 'none'
+            document.getElementById('firstImage').style.display = 'none'
+            document.getElementById('thirdImage').style.display = 'block'
+
+            document.getElementById('text1').style.display = 'none'
+            document.getElementById('text2').style.display = 'none'
+            document.getElementById('text3').style.display = 'block'
+        }
+
+      </script>
+
+
+</body>
+</html>

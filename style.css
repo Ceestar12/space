@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(./home/background-home-desktop.jpg);
+}
+p,h1{
+    color: white;
+}
+.p2{
+margin: 10px 0;
+font-size: 1rem;
+line-height: 1.5;
+}
+.first-container{
+    width: 390px;
+}
+h1{
+    font-size: 7rem;
+    margin: 10px 0;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+       
+}
+a span{
+    margin-right: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15rem;   
+    margin-top: 15%;
+    margin-left: 15%;
+    
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.btn{
+    background-color: transparent;
+    border: 1px solid white;
+    width: 700px;
+    padding: 30px 40px;
+    backdrop-filter: blur;
+}
+button{
+    background-color: transparent;
+    color: white;
+    margin-right: 1rem;
+    border: none;
+    outline: none;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+}

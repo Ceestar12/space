@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home">
+        <div class="nav-container">
+            <div>
+                <img src="shared/logo.svg" alt="">
+            </div>
+            <div class="btn">
+                <ul >
+                    <li >
+                        <a href="/index.html" class="list-style-none"><span>00</span>HOME</a>
+                    </li>
+                    <li>
+                        <a href="/destination.html"><span>01</span>DESTINATION</a>
+                    </li>
+                    <li>
+                        <a href="/crew.html"><span>02</span>CREW</a>
+                    </li>
+                    <li>
+                        <a href="/technology.html"><span>03</span>TECHNOLOGY</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <section class="section2" id="slide0" style="display: block;">
+
+    <div>
+        <h1 class="pick"><span>01</span>PICK YOUR DESTINATION</h1>
+    </div>
+    <div class="grid-container">
+        <img id="first-image" src="destination/image-moon.png" alt="">
+        <img id="second-image" src="destination/image-mars.png" alt="">
+        <img id="third-image" src="destination/image-europa.png" alt="">
+        <img id="forth-image" src="destination/image-titan.png" alt="">        
+        <div>
+            <div class="btn2">
+                <button onclick="showSlide1()">MOON</button>
+                <button onclick="showSlide2()">MARS</button>
+                <button onclick="showSlide3()">EUROPA</button>
+                <button onclick="showSlide4()">TITAN</button>
+              </div>
+    <div id="first-section">
+            <h1 id="moon">M00N</h1>
+            
+            <p class="mars-text">The smallest of the four Galilean moons orbiting Jupiter, Europe is a winter lover's dream. with an icy surface, it's perfect for a bit of ice skating, curling, hockey, or simple relaxation in your sung wintery cabin.</p>
+            <hr>
+
+            <div class="flex">
+                <div>
+                    <p>AVG. DISTANCE</p>
+                    <h1>225 MIL. KM</h1>
+                </div>
+                <div>
+                    <p>EST. TRAVEL TIME</p>
+                    <h1>9 MONTHS</h1>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;" id="second-section">
+            
+            <h1 id="mars">MARS</h1>
+            <p class="mars-text">Dont forget to pack your hiking boots. you'll need them to tackle Olympics Mons. the tallest planetary mountain in our solar system. it's two and a half times the size of Everest!</p>
+            <hr>
+
+            <div class="flex">
+                <div>
+                    <p>AVG. DISTANCE</p>
+                    <h1>225 MIL. KM</h1>
+                </div>
+                <div>
+                    <p>EST. TRAVEL TIME</p>
+                    <h1>9 MONTHS</h1>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="third-section">
+            
+            <h1 id="europa">EUROPA</h1>
+            <p class="mars-text">Dont forget to pack your hiking boots. you'll need them to tackle Olympics Mons. the tallest planetary mountain in our solar system. it's two and a half times the size of Everest!</p>
+            <hr>
+
+            <div class="flex">
+                <div>
+                    <p>AVG. DISTANCE</p>
+                    <h1>225 MIL. KM</h1>
+                </div>
+                <div>
+                    <p>EST. TRAVEL TIME</p>
+                    <h1>9 MONTHS</h1>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="forth-section">
+            
+            <h1 id="titan">TITAN</h1>
+            <p class="mars-text">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn</p>
+            <hr>
+
+            <div class="flex">
+                <div>
+                    <p>AVG. DISTANCE</p>
+                    <h1>225 MIL. KM</h1>
+                </div>
+                <div>
+                    <p>EST. TRAVEL TIME</p>
+                    <h1>9 MONTHS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    </div>
+   </section>
+
+    
+    <script>
+        
+    
+    
+function showSlide1() {
+    document.getElementById('first-image').style.display = 'block';
+    document.getElementById('second-image').style.display = 'none';
+    document.getElementById('third-image').style.display = 'none'
+    document.getElementById('forth-image').style.display = 'none'
+    
+    document.getElementById('first-section').style.display = 'block';
+    document.getElementById('second-section').style.display = 'none';
+//     document.getElementById('europa').style.display = 'none'
+//    document.getElementById('titan').style.display = 'none'
+
+}
+
+function showSlide2() {
+    document.getElementById('first-image').style.display = 'none';
+    document.getElementById('second-image').style.display = 'block';
+    document.getElementById('third-image').style.display = 'none';
+    document.getElementById('forth-image').style.display = 'none';
+    
+    document.getElementById('first-section').style.display = 'none';
+    document.getElementById('second-section').style.display = 'block';
+    document.getElementById('third-section').style.display = 'none';
+    document.getElementById('forth-section').style.display = 'none';
+
+}
+ function showSlide3(){
+   document.getElementById('third-image').style.display = 'block';
+   document.getElementById('first-image').style.display = 'none'
+   document.getElementById('second-image').style.display = 'none'
+   document.getElementById('forth-image').style.display = 'none'
+
+    document.getElementById('first-section').style.display = 'none';
+    document.getElementById('second-section').style.display = 'none';
+    document.getElementById('third-section').style.display = 'block';
+    document.getElementById('forth-section').style.display = 'none';
+ }
+ function showSlide4(){
+    document.getElementById('forth-image').style.display = 'block';
+    document.getElementById('first-image').style.display = 'none'
+    document.getElementById('second-image').style.display = 'none'
+    document.getElementById('third-image').style.display = 'none'
+
+    document.getElementById('first-section').style.display = 'none';
+    document.getElementById('second-section').style.display = 'none';
+    document.getElementById('third-section').style.display = 'none';
+    document.getElementById('forth-section').style.display = 'block';
+ }
+ 
+    </script>
+</body>
+</html>

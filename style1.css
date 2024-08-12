@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    
+    
+}
+.home{
+    height: 100vh;
+    background-image: url(destination/background-destination-desktop.jpg);
+}
+p,h1{
+    color: white;
+}
+
+.first-container{
+    width: 390px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+       
+}
+.pick{
+    margin:  50px 0;
+    margin-left: 30px;
+    font-size: 1.5rem;
+}
+a span{
+    margin-right: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.btn2{
+    padding: 20px 0;
+    cursor: pointer;
+}
+#moon{
+    font-size: 5.5rem;
+   
+}
+#mars,#europa,#titan{
+    font-size: 5.5rem;
+   
+}
+#moon-text{
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+   
+    margin: 20px 150px;
+}
+.grid-container img{
+    width: 400px;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.btn{
+    background-color: transparent;
+    border: 1px solid white;
+    width: 700px;
+    padding: 30px 40px;
+    backdrop-filter: blur;
+}
+.btn{
+    background-color: transparent;
+    color: white;
+    margin-right: 1rem;
+    border: none;
+    outline: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 30px 0;
+}
+#second-image,#third-image,#forth-image{
+    display: none;
+}
